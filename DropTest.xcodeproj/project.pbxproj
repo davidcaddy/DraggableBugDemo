@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F064A842C1FB7E300588F64 /* TransferableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F064A832C1FB7E300588F64 /* TransferableType.swift */; };
 		7FB9CDAA2C1F076500BCB3B3 /* DropTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9CDA92C1F076500BCB3B3 /* DropTestApp.swift */; };
 		7FB9CDAC2C1F076500BCB3B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9CDAB2C1F076500BCB3B3 /* ContentView.swift */; };
 		7FB9CDAE2C1F076700BCB3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB9CDAD2C1F076700BCB3B3 /* Assets.xcassets */; };
@@ -14,12 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F064A832C1FB7E300588F64 /* TransferableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferableType.swift; sourceTree = "<group>"; };
+		7F064A852C1FF14B00588F64 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		7FB9CDA62C1F076500BCB3B3 /* DropTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB9CDA92C1F076500BCB3B3 /* DropTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropTestApp.swift; sourceTree = "<group>"; };
 		7FB9CDAB2C1F076500BCB3B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FB9CDAD2C1F076700BCB3B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FB9CDAF2C1F076700BCB3B3 /* DropTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DropTest.entitlements; sourceTree = "<group>"; };
 		7FB9CDB12C1F076700BCB3B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FB9CDB82C1F10EF00BCB3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 		7FB9CD9D2C1F076500BCB3B3 = {
 			isa = PBXGroup;
 			children = (
+				7F064A852C1FF14B00588F64 /* README.markdown */,
 				7FB9CDA82C1F076500BCB3B3 /* DropTest */,
 				7FB9CDA72C1F076500BCB3B3 /* Products */,
 			);
@@ -52,8 +57,10 @@
 		7FB9CDA82C1F076500BCB3B3 /* DropTest */ = {
 			isa = PBXGroup;
 			children = (
+				7FB9CDB82C1F10EF00BCB3B3 /* Info.plist */,
 				7FB9CDA92C1F076500BCB3B3 /* DropTestApp.swift */,
 				7FB9CDAB2C1F076500BCB3B3 /* ContentView.swift */,
+				7F064A832C1FB7E300588F64 /* TransferableType.swift */,
 				7FB9CDAD2C1F076700BCB3B3 /* Assets.xcassets */,
 				7FB9CDAF2C1F076700BCB3B3 /* DropTest.entitlements */,
 				7FB9CDB02C1F076700BCB3B3 /* Preview Content */,
@@ -97,7 +104,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					7FB9CDA52C1F076500BCB3B3 = {
 						CreatedOnToolsVersion = 15.3;
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F064A842C1FB7E300588F64 /* TransferableType.swift in Sources */,
 				7FB9CDAC2C1F076500BCB3B3 /* ContentView.swift in Sources */,
 				7FB9CDAA2C1F076500BCB3B3 /* DropTestApp.swift in Sources */,
 			);
@@ -181,6 +189,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -242,6 +251,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -269,11 +279,13 @@
 				CODE_SIGN_ENTITLEMENTS = DropTest/DropTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"DropTest/Preview Content\"";
 				DEVELOPMENT_TEAM = DW6T586253;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DropTest/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,11 +319,13 @@
 				CODE_SIGN_ENTITLEMENTS = DropTest/DropTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"DropTest/Preview Content\"";
 				DEVELOPMENT_TEAM = DW6T586253;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DropTest/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
